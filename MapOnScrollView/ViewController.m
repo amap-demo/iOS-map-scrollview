@@ -13,6 +13,7 @@
 {
     UIScrollView *_scrollView;
     int _currentIndex;
+    UISegmentedControl *_segmentedControl;
 }
 @end
 
@@ -26,8 +27,20 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     _currentIndex = 0;
-    self.title = [NSString stringWithFormat:@"page :%d", _currentIndex];
+//    self.title = [NSString stringWithFormat:@"page :%d", _currentIndex];
     
+    // segmented
+    NSArray *segmentedArray = [NSArray arrayWithObjects:@"首页", @"地图", @"尾页", nil];
+    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
+    segmentedControl.frame = CGRectMake(0.0, 0.0, 300.0, 30.0);
+    segmentedControl.selectedSegmentIndex = 0;
+    [segmentedControl addTarget:self action:@selector(segmentedAction:)
+               forControlEvents:UIControlEventValueChanged];
+    
+    [self.navigationItem setTitleView:segmentedControl];
+    _segmentedControl = segmentedControl;
+    
+    // scroll
     _scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     _scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
@@ -47,7 +60,7 @@
     
     // 添加pan手势
     UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panHandler:)];
-    //    设置delegate
+    // 设置delegate
     pan.delegate = self;
     [_scrollView addGestureRecognizer:pan];
     
@@ -58,7 +71,7 @@
     [super viewDidLayoutSubviews];
     
     
-    _scrollView.frame = CGRectMake(0, 0, 300, 450);
+    _scrollView.frame = self.view.bounds;
     _scrollView.backgroundColor = [UIColor darkGrayColor];
     
     _scrollView.center = self.view.center;
@@ -77,7 +90,7 @@
     
     MAMapView *map = [[MAMapView alloc] initWithFrame:c.bounds];
     [b addSubview:map];
-    
+//
     [_scrollView addSubview:a];
     [_scrollView addSubview:b];
     [_scrollView addSubview:c];
@@ -101,21 +114,31 @@
     if (idx != _currentIndex)
     {
         _currentIndex = idx;
-        self.title = [NSString stringWithFormat:@"page :%d", _currentIndex];
+//        self.title = [NSString stringWithFormat:@"page :%d", _currentIndex];
+        [_segmentedControl setSelectedSegmentIndex:_currentIndex];
     }
+}
+
+- (void)segmentedAction:(UISegmentedControl *)sender
+{
+    NSInteger idx = sender.selectedSegmentIndex;
+    CGFloat width = _scrollView.frame.size.width * idx;
+    [_scrollView setContentOffset:CGPointMake(width, 0) animated:YES];
 }
 
 //实现手势处理
 - (void)panHandler:(UIPanGestureRecognizer *)gesture
 {
 //    NSLog(@"vvv %f, %f", [gesture velocityInView:_scrollView].x, [gesture velocityInView:_scrollView].y);
+//        NSLog(@"isDecelerating %d, isDragging %d",_scrollView.isDecelerating, _scrollView.isDragging);
     // 设置触发条件
     if (gesture.state != UIGestureRecognizerStateEnded)
     {
         return;
     }
     
-    if (fabs([gesture velocityInView:_scrollView].x) > 1200)
+    // 调整滑动手势速度阈值
+    if (fabs([gesture velocityInView:_scrollView].x) > 1400)
     {
         // -1 向左，1 向右
         int direction = fabs([gesture velocityInView:_scrollView].x) / [gesture velocityInView:_scrollView].x;
