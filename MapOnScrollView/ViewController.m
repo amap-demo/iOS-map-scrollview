@@ -27,7 +27,6 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     _currentIndex = 0;
-//    self.title = [NSString stringWithFormat:@"page :%d", _currentIndex];
     
     // segmented
     NSArray *segmentedArray = [NSArray arrayWithObjects:@"首页", @"地图", @"尾页", nil];
@@ -56,7 +55,6 @@
     _scrollView.clipsToBounds = YES;
     
     [self.view addSubview:_scrollView];
-    
     
     // 添加pan手势
     UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panHandler:)];
@@ -114,7 +112,6 @@
     if (idx != _currentIndex)
     {
         _currentIndex = idx;
-//        self.title = [NSString stringWithFormat:@"page :%d", _currentIndex];
         [_segmentedControl setSelectedSegmentIndex:_currentIndex];
     }
 }
@@ -130,7 +127,6 @@
 - (void)panHandler:(UIPanGestureRecognizer *)gesture
 {
 //    NSLog(@"vvv %f, %f", [gesture velocityInView:_scrollView].x, [gesture velocityInView:_scrollView].y);
-//        NSLog(@"isDecelerating %d, isDragging %d",_scrollView.isDecelerating, _scrollView.isDragging);
     // 设置触发条件
     if (gesture.state != UIGestureRecognizerStateEnded)
     {
