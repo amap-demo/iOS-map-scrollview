@@ -78,13 +78,13 @@
     CGFloat height = _scrollView.frame.size.height;
     
     UIView *a = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
-    a.backgroundColor = [UIColor redColor];
+    a.backgroundColor = [UIColor grayColor];
     
     UIView *b = [[UIView alloc] initWithFrame:CGRectMake(width, 0, width, height)];
-    b.backgroundColor = [UIColor greenColor];
+    b.backgroundColor = [UIColor grayColor];
     
     UIView *c = [[UIView alloc] initWithFrame:CGRectMake(width * 2, 0, width, height)];
-    c.backgroundColor = [UIColor blueColor];
+    c.backgroundColor = [UIColor grayColor];
     
     MAMapView *map = [[MAMapView alloc] initWithFrame:c.bounds];
     [b addSubview:map];
