@@ -13,8 +13,19 @@
 		6A010D8B1E09142A00FE255B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A010D891E09142A00FE255B /* Main.storyboard */; };
 		6A010D8D1E09142A00FE255B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A010D8C1E09142A00FE255B /* Assets.xcassets */; };
 		6A010D901E09142A00FE255B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A010D8E1E09142A00FE255B /* LaunchScreen.storyboard */; };
+		6A48AD8B1E26054B00ADE486 /* MapOnScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A48AD8A1E26054B00ADE486 /* MapOnScrollViewUITests.m */; };
 		D0FBD050B1090B786A8151E3 /* libPods-MapOnScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701CAC084C685AB387CE073 /* libPods-MapOnScrollView.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A48AD8D1E26054B00ADE486 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A010D751E09142A00FE255B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A010D7C1E09142A00FE255B;
+			remoteInfo = MapOnScrollView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3F73854C36E529D565E04F49 /* Pods-MapOnScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapOnScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapOnScrollView/Pods-MapOnScrollView.release.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +39,9 @@
 		6A010D8C1E09142A00FE255B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A010D8F1E09142A00FE255B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A010D911E09142A00FE255B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A48AD881E26054B00ADE486 /* MapOnScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapOnScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A48AD8A1E26054B00ADE486 /* MapOnScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapOnScrollViewUITests.m; sourceTree = "<group>"; };
+		6A48AD8C1E26054B00ADE486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8701CAC084C685AB387CE073 /* libPods-MapOnScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapOnScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE13DE7BACE91EE3D12C1F02 /* Pods-MapOnScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapOnScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapOnScrollView/Pods-MapOnScrollView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +52,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0FBD050B1090B786A8151E3 /* libPods-MapOnScrollView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A48AD851E26054B00ADE486 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				6A010D7F1E09142A00FE255B /* MapOnScrollView */,
+				6A48AD891E26054B00ADE486 /* MapOnScrollViewUITests */,
 				6A010D7E1E09142A00FE255B /* Products */,
 				2A081A8B455B2340248B444F /* Pods */,
 				C6061A1D05640C4FEA7CFD10 /* Frameworks */,
@@ -67,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				6A010D7D1E09142A00FE255B /* MapOnScrollView.app */,
+				6A48AD881E26054B00ADE486 /* MapOnScrollViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +116,15 @@
 				6A010D811E09142A00FE255B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A48AD891E26054B00ADE486 /* MapOnScrollViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A48AD8A1E26054B00ADE486 /* MapOnScrollViewUITests.m */,
+				6A48AD8C1E26054B00ADE486 /* Info.plist */,
+			);
+			path = MapOnScrollViewUITests;
 			sourceTree = "<group>";
 		};
 		C6061A1D05640C4FEA7CFD10 /* Frameworks */ = {
@@ -126,6 +158,24 @@
 			productReference = 6A010D7D1E09142A00FE255B /* MapOnScrollView.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6A48AD871E26054B00ADE486 /* MapOnScrollViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A48AD911E26054B00ADE486 /* Build configuration list for PBXNativeTarget "MapOnScrollViewUITests" */;
+			buildPhases = (
+				6A48AD841E26054B00ADE486 /* Sources */,
+				6A48AD851E26054B00ADE486 /* Frameworks */,
+				6A48AD861E26054B00ADE486 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A48AD8E1E26054B00ADE486 /* PBXTargetDependency */,
+			);
+			name = MapOnScrollViewUITests;
+			productName = MapOnScrollViewUITests;
+			productReference = 6A48AD881E26054B00ADE486 /* MapOnScrollViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -139,6 +189,12 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = YMJ372W38W;
 						ProvisioningStyle = Manual;
+					};
+					6A48AD871E26054B00ADE486 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+						TestTargetID = 6A010D7C1E09142A00FE255B;
 					};
 				};
 			};
@@ -156,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				6A010D7C1E09142A00FE255B /* MapOnScrollView */,
+				6A48AD871E26054B00ADE486 /* MapOnScrollViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -168,6 +225,13 @@
 				6A010D901E09142A00FE255B /* LaunchScreen.storyboard in Resources */,
 				6A010D8D1E09142A00FE255B /* Assets.xcassets in Resources */,
 				6A010D8B1E09142A00FE255B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A48AD861E26054B00ADE486 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +296,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A48AD841E26054B00ADE486 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A48AD8B1E26054B00ADE486 /* MapOnScrollViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A48AD8E1E26054B00ADE486 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A010D7C1E09142A00FE255B /* MapOnScrollView */;
+			targetProxy = 6A48AD8D1E26054B00ADE486 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6A010D891E09142A00FE255B /* Main.storyboard */ = {
@@ -377,6 +457,34 @@
 			};
 			name = Release;
 		};
+		6A48AD8F1E26054B00ADE486 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = MapOnScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.MapOnScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9b821a78-8ad6-4cf7-b6b0-31b43df04bbe";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = MapOnScrollView;
+			};
+			name = Debug;
+		};
+		6A48AD901E26054B00ADE486 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = MapOnScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.MapOnScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9b821a78-8ad6-4cf7-b6b0-31b43df04bbe";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = MapOnScrollView;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -397,6 +505,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6A48AD911E26054B00ADE486 /* Build configuration list for PBXNativeTarget "MapOnScrollViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A48AD8F1E26054B00ADE486 /* Debug */,
+				6A48AD901E26054B00ADE486 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
