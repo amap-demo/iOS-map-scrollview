@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4585752B4216384BCA27C94B /* libPods-MapOnScrollView-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B318D506A46C212715B0328B /* libPods-MapOnScrollView-Swift.a */; };
 		6A010D821E09142A00FE255B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A010D811E09142A00FE255B /* main.m */; };
 		6A010D851E09142A00FE255B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A010D841E09142A00FE255B /* AppDelegate.m */; };
 		6A010D881E09142A00FE255B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A010D871E09142A00FE255B /* ViewController.m */; };
@@ -15,6 +16,11 @@
 		6A010D901E09142A00FE255B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A010D8E1E09142A00FE255B /* LaunchScreen.storyboard */; };
 		6A48AD8B1E26054B00ADE486 /* MapOnScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A48AD8A1E26054B00ADE486 /* MapOnScrollViewUITests.m */; };
 		D0FBD050B1090B786A8151E3 /* libPods-MapOnScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701CAC084C685AB387CE073 /* libPods-MapOnScrollView.a */; };
+		D9F65B971E2CF418002BBD5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F65B961E2CF418002BBD5C /* AppDelegate.swift */; };
+		D9F65B991E2CF418002BBD5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F65B981E2CF418002BBD5C /* ViewController.swift */; };
+		D9F65B9C1E2CF418002BBD5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F65B9A1E2CF418002BBD5C /* Main.storyboard */; };
+		D9F65B9E1E2CF418002BBD5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F65B9D1E2CF418002BBD5C /* Assets.xcassets */; };
+		D9F65BA11E2CF418002BBD5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F65B9F1E2CF418002BBD5C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +49,18 @@
 		6A48AD8A1E26054B00ADE486 /* MapOnScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapOnScrollViewUITests.m; sourceTree = "<group>"; };
 		6A48AD8C1E26054B00ADE486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8701CAC084C685AB387CE073 /* libPods-MapOnScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapOnScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F3C5AF5F5D1899EA3453F9 /* Pods-MapOnScrollView-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapOnScrollView-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapOnScrollView-Swift/Pods-MapOnScrollView-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		B318D506A46C212715B0328B /* libPods-MapOnScrollView-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapOnScrollView-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE13DE7BACE91EE3D12C1F02 /* Pods-MapOnScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapOnScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapOnScrollView/Pods-MapOnScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		CF92544C54CFE9789BFD0887 /* Pods-MapOnScrollView-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapOnScrollView-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapOnScrollView-Swift/Pods-MapOnScrollView-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		D9F65B941E2CF418002BBD5C /* MapOnScrollView-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MapOnScrollView-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F65B961E2CF418002BBD5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9F65B981E2CF418002BBD5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9F65B9B1E2CF418002BBD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9F65B9D1E2CF418002BBD5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9F65BA01E2CF418002BBD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9F65BA21E2CF418002BBD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F65BA61E2CF494002BBD5C /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +79,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9F65B911E2CF418002BBD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4585752B4216384BCA27C94B /* libPods-MapOnScrollView-Swift.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +95,8 @@
 			children = (
 				BE13DE7BACE91EE3D12C1F02 /* Pods-MapOnScrollView.debug.xcconfig */,
 				3F73854C36E529D565E04F49 /* Pods-MapOnScrollView.release.xcconfig */,
+				B0F3C5AF5F5D1899EA3453F9 /* Pods-MapOnScrollView-Swift.debug.xcconfig */,
+				CF92544C54CFE9789BFD0887 /* Pods-MapOnScrollView-Swift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -79,6 +106,7 @@
 			children = (
 				6A010D7F1E09142A00FE255B /* MapOnScrollView */,
 				6A48AD891E26054B00ADE486 /* MapOnScrollViewUITests */,
+				D9F65B951E2CF418002BBD5C /* MapOnScrollView-Swift */,
 				6A010D7E1E09142A00FE255B /* Products */,
 				2A081A8B455B2340248B444F /* Pods */,
 				C6061A1D05640C4FEA7CFD10 /* Frameworks */,
@@ -90,6 +118,7 @@
 			children = (
 				6A010D7D1E09142A00FE255B /* MapOnScrollView.app */,
 				6A48AD881E26054B00ADE486 /* MapOnScrollViewUITests.xctest */,
+				D9F65B941E2CF418002BBD5C /* MapOnScrollView-Swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,8 +160,23 @@
 			isa = PBXGroup;
 			children = (
 				8701CAC084C685AB387CE073 /* libPods-MapOnScrollView.a */,
+				B318D506A46C212715B0328B /* libPods-MapOnScrollView-Swift.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9F65B951E2CF418002BBD5C /* MapOnScrollView-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				D9F65B961E2CF418002BBD5C /* AppDelegate.swift */,
+				D9F65BA61E2CF494002BBD5C /* Swift-Bridging-Header.h */,
+				D9F65B981E2CF418002BBD5C /* ViewController.swift */,
+				D9F65B9A1E2CF418002BBD5C /* Main.storyboard */,
+				D9F65B9D1E2CF418002BBD5C /* Assets.xcassets */,
+				D9F65B9F1E2CF418002BBD5C /* LaunchScreen.storyboard */,
+				D9F65BA21E2CF418002BBD5C /* Info.plist */,
+			);
+			path = "MapOnScrollView-Swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,12 +220,33 @@
 			productReference = 6A48AD881E26054B00ADE486 /* MapOnScrollViewUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D9F65B931E2CF418002BBD5C /* MapOnScrollView-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F65BA51E2CF418002BBD5C /* Build configuration list for PBXNativeTarget "MapOnScrollView-Swift" */;
+			buildPhases = (
+				6E9B5FEE0D81BE848532B9A8 /* [CP] Check Pods Manifest.lock */,
+				D9F65B901E2CF418002BBD5C /* Sources */,
+				D9F65B911E2CF418002BBD5C /* Frameworks */,
+				D9F65B921E2CF418002BBD5C /* Resources */,
+				A9CA4CCF52530DAB20632EF7 /* [CP] Embed Pods Frameworks */,
+				BFF978FD8B4426400E74509A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MapOnScrollView-Swift";
+			productName = "MapOnScrollView-Swift";
+			productReference = D9F65B941E2CF418002BBD5C /* MapOnScrollView-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6A010D751E09142A00FE255B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Amap.com;
 				TargetAttributes = {
@@ -195,6 +260,11 @@
 						DevelopmentTeam = YMJ372W38W;
 						ProvisioningStyle = Manual;
 						TestTargetID = 6A010D7C1E09142A00FE255B;
+					};
+					D9F65B931E2CF418002BBD5C = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -213,6 +283,7 @@
 			targets = (
 				6A010D7C1E09142A00FE255B /* MapOnScrollView */,
 				6A48AD871E26054B00ADE486 /* MapOnScrollViewUITests */,
+				D9F65B931E2CF418002BBD5C /* MapOnScrollView-Swift */,
 			);
 		};
 /* End PBXProject section */
@@ -235,10 +306,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9F65B921E2CF418002BBD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F65BA11E2CF418002BBD5C /* LaunchScreen.storyboard in Resources */,
+				D9F65B9E1E2CF418002BBD5C /* Assets.xcassets in Resources */,
+				D9F65B9C1E2CF418002BBD5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		335A27014F4B0781D85F112A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E9B5FEE0D81BE848532B9A8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,6 +362,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapOnScrollView/Pods-MapOnScrollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9CA4CCF52530DAB20632EF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapOnScrollView-Swift/Pods-MapOnScrollView-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF978FD8B4426400E74509A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapOnScrollView-Swift/Pods-MapOnScrollView-Swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F0E07700AD8B59E592136E3D /* [CP] Embed Pods Frameworks */ = {
@@ -304,6 +430,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9F65B901E2CF418002BBD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F65B991E2CF418002BBD5C /* ViewController.swift in Sources */,
+				D9F65B971E2CF418002BBD5C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -327,6 +462,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				6A010D8F1E09142A00FE255B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D9F65B9A1E2CF418002BBD5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9F65B9B1E2CF418002BBD5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9F65B9F1E2CF418002BBD5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9F65BA01E2CF418002BBD5C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -485,6 +636,46 @@
 			};
 			name = Release;
 		};
+		D9F65BA31E2CF418002BBD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F3C5AF5F5D1899EA3453F9 /* Pods-MapOnScrollView-Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "MapOnScrollView-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.MapOnScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "./MapOnScrollView-Swift/Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D9F65BA41E2CF418002BBD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF92544C54CFE9789BFD0887 /* Pods-MapOnScrollView-Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "MapOnScrollView-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.MapOnScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				SWIFT_OBJC_BRIDGING_HEADER = "./MapOnScrollView-Swift/Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -513,6 +704,16 @@
 				6A48AD901E26054B00ADE486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F65BA51E2CF418002BBD5C /* Build configuration list for PBXNativeTarget "MapOnScrollView-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F65BA31E2CF418002BBD5C /* Debug */,
+				D9F65BA41E2CF418002BBD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

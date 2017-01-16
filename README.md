@@ -47,3 +47,34 @@
     return YES;
 }
 ```
+
+`Swift`
+
+```
+
+//实现手势处理
+func panHandle(gesture : UIPanGestureRecognizer) {
+
+    if gesture.state != UIGestureRecognizerState.ended {
+        return
+    }
+
+    if fabs(gesture.velocity(in: self.scrollView).x) > 1400 {
+
+        // -1 向左，1 向右
+        let direction = fabs(gesture.velocity(in: self.scrollView).x) / gesture.velocity(in: self.scrollView).x
+        let validIdx = 1
+
+        if self.currentIndex == validIdx && !self.scrollView.isDecelerating {
+            let width: CGFloat = self.scrollView.frame.size.width * CGFloat(1 - direction)
+            scrollView.setContentOffset(CGPoint(x: width, y: CGFloat(0)), animated: true)
+        }
+    }
+}
+
+//设置允许和scrollview上pan手势并发
+func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    return true
+}
+
+```

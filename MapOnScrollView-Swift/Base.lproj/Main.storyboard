@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapOnScrollView_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDi-mY-Xbj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RwZ-g6-kRC">
+                                        <rect key="frame" x="59" y="29" width="203" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="203" id="Ld8-yd-RRG"/>
+                                            <constraint firstAttribute="height" constant="28" id="Trp-ws-KmW"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="首页"/>
+                                            <segment title="地图"/>
+                                            <segment title="尾页"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="GU7-eA-fbP"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="kK3-a7-do3"/>
+                                    <constraint firstItem="RwZ-g6-kRC" firstAttribute="centerX" secondItem="IDi-mY-Xbj" secondAttribute="centerX" id="n9U-pT-ffI"/>
+                                    <constraint firstAttribute="bottom" secondItem="RwZ-g6-kRC" secondAttribute="bottom" constant="7" id="sf9-S9-yt7"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXG-gv-NXK">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MNq-wc-xlS"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IDi-mY-Xbj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Acf-jR-ZRJ"/>
+                            <constraint firstItem="SXG-gv-NXK" firstAttribute="top" secondItem="IDi-mY-Xbj" secondAttribute="bottom" id="LBc-nO-K7L"/>
+                            <constraint firstItem="IDi-mY-Xbj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P4d-T4-ByF"/>
+                            <constraint firstItem="SXG-gv-NXK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fLy-Gk-pgl"/>
+                            <constraint firstAttribute="trailing" secondItem="SXG-gv-NXK" secondAttribute="trailing" id="iGC-Bf-jGw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SXG-gv-NXK" secondAttribute="bottom" id="oo0-Yo-InY"/>
+                            <constraint firstAttribute="trailing" secondItem="IDi-mY-Xbj" secondAttribute="trailing" id="yhT-hE-3ss"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="SXG-gv-NXK" id="MfR-5Q-jza"/>
+                        <outlet property="segmentedControl" destination="RwZ-g6-kRC" id="6fn-Ft-UXg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="115"/>
+        </scene>
+    </scenes>
+</document>
