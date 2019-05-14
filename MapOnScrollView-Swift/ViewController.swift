@@ -56,7 +56,7 @@ class ViewController: UIViewController ,UIScrollViewDelegate ,UIGestureRecognize
 
     
     //实现手势处理
-    func panHandle(gesture : UIPanGestureRecognizer) {
+    @objc func panHandle(gesture : UIPanGestureRecognizer) {
         
         if gesture.state != UIGestureRecognizerState.ended {
             return
